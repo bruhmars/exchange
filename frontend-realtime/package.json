@@ -12,6 +12,7 @@
     "@tailwindcss/postcss": "^4.3.5",
     "@types/ws": "^8.18.2",
     "axios": "^1.21.1",
+    "lightweight-charts": "^4.2.3",
     "next": "16.4.5",
     "postcss": "^8.5.32",
     "react": "19.3.0",
