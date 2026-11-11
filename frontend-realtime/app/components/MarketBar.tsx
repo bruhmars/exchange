@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Ticker } from "../app/utils/types";
-import { getTicker } from "../app/utils/httpClient";
-import { SignalingManager } from "../app/utils/SignalingManager";
+import { Ticker } from "../utils/types";
+import { getTicker } from "../utils/httpClient";
+import { SignalingManager } from "../utils/SignalingManager";
 
 export const MarketBar = ({ market }: { market: string }) => {
     const [ticker, setTicker] = useState<Ticker | null>(null);
