@@ -7,7 +7,7 @@ export class SignalingManager {
     private ws: WebSocket;
     private static instance: SignalingManager;
     private bufferedMessages: any[] = [];
-    private callbacks: any = {};
+    private callbacks: { [type: string]: any[] } = {}; //object 
     private id: number;
     private initialized: boolean = false;
 

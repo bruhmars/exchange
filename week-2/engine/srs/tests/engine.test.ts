@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { Engine } from "../trade/Engine";
+import { Engine } from "../";
 import { RedisManager } from "../RedisManager";
 import { CREATE_ORDER } from "../types/fromApi";
 

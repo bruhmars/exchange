@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import { orderRouter } from "./routes/order";
 import { depthRouter } from "./routes/depth";
-import { tradesRouter } from "./routes/trades";
+import { tradesRouter } from "./routes/trade";
 import { klineRouter } from "./routes/kline";
 import { tickersRouter } from "./routes/ticker";
 
