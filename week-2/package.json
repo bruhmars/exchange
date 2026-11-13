@@ -1,0 +1,12 @@
+{
+  "name": "week-2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "infra": "docker start redis pg",
+    "dev": "concurrently -n db,engine,api,ws,web,mm \"npm --prefix db run dev\" \"npm --prefix engine run dev\" \"npm --prefix api run dev\" \"npm --prefix ws run dev\" \"npm --prefix frontend run dev\" \"sleep 10 && npm --prefix mm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
